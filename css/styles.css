@@ -86,16 +86,27 @@ a {
   border-color: #859c05;
   color: #859c05;
 }
+
 /* Home page */
 .menu {
   max-width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .logo {
   width: 100%;
   max-width: 150px;
   margin-left: 15px;
+  padding-right: 20px;
+}
+
+.fa-user {
+  padding: 0 10px 0 50px;
 }
 
 .welcome {
@@ -165,9 +176,11 @@ a {
   max-width: 1200px;
   margin: 20px auto;
   grid-gap: 10px;
+  text-align: center;
 }
 
 .featured img {
+  grid-column: -1/1;
   width: 100%;
 }
 
@@ -178,12 +191,34 @@ a {
   text-align: center;
 }
 
-.featured__products {
-  display: grid;
+.footer-content {
+  display: flex;
   align-items: center;
-  margin: 5px;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 50px;
+  border-top: solid;
+  border-width: 0.1em;
+  border-color: #3c3c3c;
+  padding: 20px;
 }
 
-footer {
-  margin-top: 50px;
+.footer-content a {
+  font-size: 0.9em;
+  padding: 10px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #072b54;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+}
+
+.socials li {
+  margin: 0 4px;
 }
