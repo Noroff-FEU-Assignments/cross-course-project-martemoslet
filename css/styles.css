@@ -7,6 +7,14 @@ footer a {
 header a {
   text-transform: uppercase;
   padding: 20px;
+  font-size: 2em;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 body {
@@ -23,9 +31,12 @@ h2 {
 }
 
 nav {
-  margin-left: 45px;
-  margin-right: 15px;
-  margin-top: 15px;
+  display: none;
+  position: fixed;
+  top: 80px;
+  z-index: 1000;
+  left: 0px;
+  background: #fff;
 }
 
 nav ul {
@@ -33,14 +44,16 @@ nav ul {
 }
 
 nav li {
-  display: inline-block;
-  text-align: center;
-  margin-bottom: 20px;
+  display: block;
+  padding: 30px;
 }
 
-.welcome,
-.new-collection {
-  background-color: #e6e6e6;
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
 }
 
 h1 {
@@ -88,25 +101,21 @@ a {
 }
 
 /* Home page */
-.menu {
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  text-align: center;
-  margin-bottom: 10px;
+.fa-bars {
+  font-size: 2em;
+  padding-left: 40px;
+  color: #072b54;
 }
 
 .logo {
   width: 100%;
   max-width: 150px;
-  margin-left: 15px;
   padding-right: 20px;
+  z-index: 1050;
 }
 
 .fa-user {
-  padding: 0 10px 0 50px;
+  padding: 0 10px 0 100px;
 }
 
 .welcome {
@@ -121,16 +130,17 @@ a {
 .new-collection {
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 90vh;
+  min-height: 50vh;
   position: relative;
+  background-position-x: center;
 }
 
 .welcome-text,
 .new-collection__text {
   position: absolute;
   text-align: center;
-  top: 100px;
-  left: 200px;
+  top: 20px;
+  left: 50px;
 }
 
 .new-collection__text h1 {
@@ -141,26 +151,22 @@ a {
   font-family: "forma-djr-deck", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .big-text {
   font-family: "forma-djr-deck", sans-serif;
   font-weight: 800;
   font-style: italic;
-  font-size: 3em;
+  font-size: 2em;
   text-transform: uppercase;
 }
 
 .signup {
-  display: flex;
+  display: grid;
   align-items: center;
   max-width: 600px;
-  padding-left: 25%;
-}
-
-.signup > * {
-  flex: 1;
+  justify-content: center;
 }
 
 .signup h2 {
@@ -168,11 +174,12 @@ a {
   font-size: 1.2em;
   font-style: italic;
   font-weight: bold;
+  text-align: center;
 }
 
 .featured {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   max-width: 1200px;
   margin: 20px auto;
   grid-gap: 10px;
@@ -182,6 +189,7 @@ a {
 .featured img {
   grid-column: -1/1;
   width: 100%;
+  margin-top: 20px;
 }
 
 .featured h2 {
@@ -222,3 +230,76 @@ a {
 .socials li {
   margin: 0 4px;
 }
+
+@media (min-width: 600px) {
+  .featured {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .welcome,
+  .new-collection {
+    min-height: 90vh;
+  }
+  .welcome-text,
+  .new-collection__text {
+    top: 50px;
+    left: 100px;
+  }
+  .small-text {
+    font-size: 2em;
+  }
+  .big-text {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 900px) {
+  .welcome-text,
+  .new-collection__text {
+    top: 100px;
+    left: 200px;
+  }
+  .signup {
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+  }
+  .signup > * {
+    flex: 1;
+  }
+  .signup-section {
+    background-size: 100%;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    text-align: center;
+    position: static;
+    top: 0px;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  nav li {
+      display: inline-block;
+      padding: 10px;
+      font-size: 0.6em;
+  }
+
+  header label {
+    display: none;
+  }
+
+  header {
+    justify-content: start;
+  }
+
+  .menu { 
+      display: flex; 
+      max-width: 100%; 
+      display: flex; 
+      justify-content: space-evenly; 
+      align-items: center; 
+      flex-direction: row; 
+      text-align: center; 
+      margin-bottom: 10px;
+  }
