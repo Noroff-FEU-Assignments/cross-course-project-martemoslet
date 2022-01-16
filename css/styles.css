@@ -10,6 +10,10 @@ header a {
   font-size: 2em;
 }
 
+header .fa-user {
+  display: none;
+}
+
 header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -113,10 +117,6 @@ a {
 .fa-search,
 .fa-shopping-cart {
   font-size: 1.8em;
-}
-
-.fa-user {
-  display: none;
 }
 
 .logo {
@@ -299,7 +299,7 @@ a {
     margin-bottom: 10px;
     margin-left: 30px;
   }
-  .fa-user {
+  header .fa-user {
     display: flex;
     padding: 0 10px 0 100px;
   }
