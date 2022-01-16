@@ -13,6 +13,7 @@ header a {
 header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
   align-items: center;
   margin-bottom: 10px;
 }
@@ -30,7 +31,7 @@ h2 {
   font-weight: 500;
 }
 
-nav {
+nav ul {
   display: none;
   position: fixed;
   top: 80px;
@@ -52,7 +53,7 @@ nav li {
   display: none;
 }
 
-#hamburger-menu:checked ~ nav {
+#hamburger-menu:checked ~ nav ul {
   display: block;
 }
 
@@ -101,10 +102,21 @@ a {
 }
 
 /* Home page */
+.fas {
+  color: #072b54;
+}
 .fa-bars {
   font-size: 2em;
   padding-left: 40px;
-  color: #072b54;
+}
+
+.fa-search,
+.fa-shopping-cart {
+  font-size: 1.8em;
+}
+
+.fa-user {
+  display: none;
 }
 
 .logo {
@@ -112,10 +124,6 @@ a {
   max-width: 150px;
   padding-right: 20px;
   z-index: 1050;
-}
-
-.fa-user {
-  padding: 0 10px 0 100px;
 }
 
 .welcome {
@@ -270,36 +278,37 @@ a {
     background-size: 100%;
     align-items: center;
   }
-  nav {
+  nav ul {
     display: flex;
-    text-align: center;
     position: static;
     top: 0px;
     max-width: 100%;
-    justify-content: center;
   }
-
   nav li {
-      display: inline-block;
-      padding: 10px;
-      font-size: 0.6em;
+    display: inline-block;
+    padding: 10px;
+    font-size: 0.6em;
   }
-
   header label {
     display: none;
   }
-
-  header {
-    justify-content: start;
+  .menu {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    margin-bottom: 10px;
+    margin-left: 30px;
   }
-
-  .menu { 
-      display: flex; 
-      max-width: 100%; 
-      display: flex; 
-      justify-content: space-evenly; 
-      align-items: center; 
-      flex-direction: row; 
-      text-align: center; 
-      margin-bottom: 10px;
+  .fa-user {
+    display: flex;
+    padding: 0 10px 0 100px;
   }
+  nav {
+    display: flex;
+  }
+  .fas {
+    margin-top: 30px;
+    font-size: 1em;
+    color: #2e2e2e;
+  }
+}
