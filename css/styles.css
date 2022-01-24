@@ -1,5 +1,6 @@
 header a,
-footer a {
+footer a,
+p {
   color: #2e2e2e;
   font-family: "Source Sans Pro", Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -29,7 +30,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "forma-djr-deck", Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -61,12 +63,10 @@ nav li {
   display: block;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   color: #072b54;
-}
-
-h2 {
-  color: #fff;
 }
 
 .signup h2 {
@@ -239,6 +239,40 @@ a {
   margin: 0 4px;
 }
 
+/* About page */
+
+.about {
+  text-align: center;
+  display: block;
+  position: relative;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.about h2,
+h3 {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.about h2 {
+  font-size: 2rem;
+}
+
+.about h3 {
+  font-size: 1.5rem;
+}
+
+.about p {
+  text-align: left;
+}
+
+.about img {
+  border-radius: 50px;
+  border: #1d5aa1 3px solid;
+  max-width: 450px;
+}
+
 @media (min-width: 600px) {
   .featured {
     grid-template-columns: repeat(3, 1fr);
@@ -310,5 +344,26 @@ a {
     margin-top: 30px;
     font-size: 1em;
     color: #2e2e2e;
+  }
+
+  .about {
+    max-width: 1200px;
+    margin: auto 50px;
+  }
+  .about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    width: 800px;
+    grid-gap: 40px;
+  }
+
+  .team-img {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .team-text {
+    grid-column: 2;
   }
 }
