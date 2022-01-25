@@ -2,7 +2,9 @@ header a,
 footer a,
 p,
 .jacket-list h2,
-.jackets-text {
+.jackets-text,
+.radio-size label,
+.cta-cart {
   color: #2e2e2e;
   font-family: "Source Sans Pro", Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -105,6 +107,16 @@ a {
   border-style: solid;
   border-color: #859c05;
   color: #859c05;
+}
+
+.cta-cart {
+  color: #b01d1b;
+  background-color: #fff;
+  border: solid 1px #b01d1b;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 5px 10px;
+  display: inline-flex;
 }
 
 /* Home page */
@@ -313,6 +325,11 @@ p {
 
 /* Specific jacket page */
 
+.jacket-page {
+  background: #e6e6e6;
+  padding: 20px;
+}
+
 .jackets-images {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -354,6 +371,37 @@ p {
 .jackets-text h2,
 .price {
   display: inline-block;
+}
+
+.size {
+  font-size: 1.2rem;
+  color: #072b54;
+}
+
+.radio-size input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.radio-size label {
+  display: inline-block;
+  background-color: #fff;
+  padding: 5px 12px;
+  text-transform: uppercase;
+  color: #1d5aa1;
+  border: solid #1d5aa1 1px;
+  margin: 2px;
+}
+
+.radio-size input[type="radio"]:checked + label {
+  background-color: #b01d1b;
+  color: #fff;
+}
+
+.radio-size input[type="radio"]:hover + label {
+  border: solid 1px #b01d1b;
+  cursor: pointer;
 }
 
 @media (min-width: 600px) {
@@ -461,5 +509,17 @@ p {
 
   .jacket-list h2 {
     font-size: 1.4rem;
+  }
+
+  .jacket-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3;
+    grid-gap: 40px;
+  }
+
+  .jackets-text p {
+    font-size: 1.2rem;
+    max-width: 500px;
   }
 }
