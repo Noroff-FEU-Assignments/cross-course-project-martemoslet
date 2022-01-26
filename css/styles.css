@@ -4,7 +4,9 @@ p,
 .jacket-list h2,
 .jackets-text,
 .radio-size label,
-.cta-cart {
+.cta-cart,
+.customer-info label,
+.payment label {
   color: #2e2e2e;
   font-family: "Source Sans Pro", Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -404,10 +406,63 @@ p {
   cursor: pointer;
 }
 
+/* Checkout page */
+
+.checkout {
+  font-weight: bold;
+  text-align: center;
+}
+
+.shopping-bag {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.shopping-bag img {
+  max-width: 200px;
+  padding-right: 20px;
+}
+
+.total {
+  grid-column: 2;
+  border-top: solid 1px #2e2e2e;
+  padding-top: 10px;
+}
+
+.customer-info,
+.payment {
+  max-width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.customer-info input,
+.payment input {
+  border-color: #1d5aa1;
+  margin: 5px 0;
+  padding: 3px;
+}
+
+.customer-info label,
+.payment label {
+  color: #072b54;
+}
+
+.cta-pay {
+  margin: auto;
+}
+
 @media (min-width: 600px) {
   .featured {
     grid-template-columns: repeat(3, 1fr);
   }
+
   .welcome,
   .new-collection {
     min-height: 90vh;
