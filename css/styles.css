@@ -461,6 +461,38 @@ p {
   text-align: center;
 }
 
+/* Checkout success page */
+
+.checkout-success {
+  background-image: url("../images/checkout.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  position: relative;
+  background-position-y: center;
+  text-align: center;
+}
+
+.fa-check-circle {
+  color: #859c05;
+  padding-top: 50px;
+  font-size: 3.5em;
+}
+
+.checkout-success h1,
+h2 {
+  color: #fff;
+}
+.checkout-success h1 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.checkout-success h2 {
+  margin-top: 450px;
+}
+
 @media (min-width: 600px) {
   .featured {
     grid-template-columns: repeat(3, 1fr);
