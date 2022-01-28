@@ -360,7 +360,7 @@ p {
   width: 100%;
 }
 
-.jackets-text h2 {
+.jackets-text h1 {
   font-size: 2rem;
   font-weight: bold;
   padding-right: 20px;
@@ -453,7 +453,8 @@ p {
 }
 
 .customer-info label,
-.payment label {
+.payment label,
+.checkout {
   color: #072b54;
 }
 
@@ -483,7 +484,8 @@ p {
 h2 {
   color: #fff;
 }
-.checkout-success h1 {
+.checkout-success h1,
+.contact-page h1 {
   font-style: italic;
   font-weight: bold;
   font-size: 2em;
@@ -491,6 +493,80 @@ h2 {
 
 .checkout-success h2 {
   margin-top: 450px;
+}
+
+/* Contact page */
+
+.contact-page h1 {
+  text-align: center;
+}
+
+.contact-page h2,
+.contact-page p,
+.fa-phone,
+.contact-page h3 {
+  color: #2e2e2e;
+}
+
+.contact-text {
+  width: 350px;
+  margin: auto;
+  padding: 30px;
+}
+
+.fa-phone,
+.fa-envelope,
+.socials-contact {
+  color: #1d5aa1;
+}
+
+.contact {
+  background-color: #e6e6e6;
+  position: relative;
+  margin: auto;
+}
+
+.customer-service {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.fa-envelope,
+.fa-phone {
+  align-self: center;
+  justify-self: center;
+  font-size: 1.2rem;
+}
+
+.customer-service p {
+  justify-self: start;
+}
+
+.contact h3 {
+  font-style: normal;
+}
+
+.contact h2,
+h3,
+.adress {
+  padding-left: 15px;
+}
+
+.contact h2,
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.socials-contact {
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  font-size: 2rem;
+}
+
+.socials-contact li {
+  padding: 3px;
 }
 
 @media (min-width: 600px) {
@@ -561,7 +637,7 @@ h2 {
   nav {
     display: flex;
   }
-  .fas {
+  .menu .fas {
     margin-top: 30px;
     font-size: 1em;
     color: #2e2e2e;
@@ -628,5 +704,23 @@ h2 {
   .cta-pay {
     grid-column: 3;
     grid-row: 2;
+  }
+
+  .checkout-success {
+    min-height: 100%;
+    width: 60vh;
+    background-position: center;
+    margin: auto;
+  }
+
+  .fa-check-circle {
+    color: #859c05;
+    padding-top: 50px;
+    font-size: 3.5em;
+  }
+
+  .checkout-success h2 {
+    margin-top: 350px;
+    padding-bottom: 150px;
   }
 }
