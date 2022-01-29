@@ -185,7 +185,7 @@ a {
 }
 
 .new-collection__text h2 {
-  margin-top: 110px;
+  margin-top: 50px;
 }
 
 .signup {
@@ -470,9 +470,10 @@ p {
   background-image: url("../images/checkout.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 90vh;
+  min-width: 20vh;
   position: relative;
   background-position-y: center;
+  background-position-x: center;
   text-align: center;
 }
 
@@ -599,6 +600,11 @@ h3 {
     top: 100px;
     left: 200px;
   }
+
+  .new-collection__text h2 {
+    margin-top: 110px;
+  }
+
   .signup {
     display: flex;
     align-items: center;
