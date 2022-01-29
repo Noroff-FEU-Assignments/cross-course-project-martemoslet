@@ -38,9 +38,10 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "forma-djr-deck", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "forma-djr-deck", sans-serif;
+  font-weight: 700;
   font-style: normal;
-  font-weight: 500;
+  font-size: 1.5em;
 }
 
 nav ul {
@@ -167,10 +168,6 @@ a {
   left: 50px;
 }
 
-.new-collection__text h1 {
-  color: #fff;
-}
-
 .small-text {
   font-family: "forma-djr-deck", sans-serif;
   font-weight: 700;
@@ -179,11 +176,16 @@ a {
 }
 
 .big-text {
+  display: block;
   font-family: "forma-djr-deck", sans-serif;
   font-weight: 800;
   font-style: italic;
   font-size: 2em;
   text-transform: uppercase;
+}
+
+.new-collection__text h2 {
+  margin-top: 110px;
 }
 
 .signup {
