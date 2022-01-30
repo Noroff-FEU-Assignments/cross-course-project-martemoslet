@@ -145,6 +145,7 @@ a {
 
 .welcome {
   background-image: url("../images/hafjell-collection.jpg");
+  background-position-y: center;
 }
 
 .new-collection {
@@ -239,7 +240,7 @@ a {
 }
 
 .footer-content a {
-  font-size: 0.9em;
+  font-size: 0.9rem;
   padding: 10px;
 }
 
