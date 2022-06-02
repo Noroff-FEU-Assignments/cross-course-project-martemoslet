@@ -90,6 +90,7 @@ a {
   color: #fff;
   padding: 10px 15px;
   font-weight: lighter;
+  border: none;
 }
 
 .cta-signup {
@@ -120,6 +121,19 @@ a {
   margin-top: 20px;
   padding: 5px 10px;
   display: inline-flex;
+}
+
+.menu li:hover,
+.footer-links a:hover {
+  font-style: italic;
+}
+
+.socials a:hover {
+  color: #1d5aa1;
+}
+
+.socials-contact a:hover {
+  color: #859c05;
 }
 
 /* Home page */
@@ -248,14 +262,13 @@ a {
   list-style: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: #072b54;
-  padding: 0 1rem;
-  font-size: 1.5rem;
 }
 
-.socials li {
+.socials a {
   margin: 0 4px;
+  color: #072b54;
+  font-size: 1.5rem;
+  padding: 4px;
 }
 
 /* About page */
@@ -449,10 +462,12 @@ p {
 }
 
 .customer-info input,
-.payment input {
-  border-color: #1d5aa1;
+.payment input,
+.contact-text input {
+  font-size: 12px;
   margin: 5px 0;
-  padding: 3px;
+  padding: 6px;
+  width: 100%;
 }
 
 .customer-info label,
@@ -461,8 +476,20 @@ p {
   color: #072b54;
 }
 
+.form-error {
+  display: none;
+  color: #cf1714;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.pay {
+  margin-top: 20px;
+}
+
 .cta-pay {
-  text-align: center;
+  width: 110px;
+  margin-top: 10px;
 }
 
 /* Checkout success page */
@@ -508,7 +535,8 @@ h2 {
 .contact-page h2,
 .contact-page p,
 .fa-phone,
-.contact-page h3 {
+.contact-page h3,
+.contact-page h4 {
   color: #2e2e2e;
 }
 
@@ -518,9 +546,17 @@ h2 {
   padding: 30px;
 }
 
+.contact-text label {
+  font-size: 0.9em;
+}
+
+.cta-contact {
+  margin: 20px auto 30px;
+}
+
 .fa-phone,
 .fa-envelope,
-.socials-contact {
+.socials-contact a {
   color: #1d5aa1;
 }
 
@@ -552,12 +588,14 @@ h2 {
 
 .contact h2,
 h3,
+h4,
 .adress {
   padding-left: 15px;
 }
 
 .contact h2,
-h3 {
+h3,
+h4 {
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -596,6 +634,8 @@ h3 {
 }
 
 @media (min-width: 900px) {
+  /* home page */
+
   .welcome-text,
   .new-collection__text {
     top: 100px;
@@ -652,6 +692,8 @@ h3 {
     color: #2e2e2e;
   }
 
+  /* about page */
+
   .about {
     max-width: 1000px;
     margin: auto;
@@ -674,6 +716,8 @@ h3 {
     grid-column: 2;
   }
 
+  /* jacket page */
+
   select {
     font-size: 0.8rem;
   }
@@ -685,6 +729,8 @@ h3 {
   .jacket-list h2 {
     font-size: 1.4rem;
   }
+
+  /* specific jacket page */
 
   .jacket-page {
     display: grid;
@@ -698,12 +744,15 @@ h3 {
     max-width: 500px;
   }
 
+  /* checkout page */
+
   .checkout-page {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    margin: 20px;
+    margin: 20px auto;
     grid-gap: 40px;
+    max-width: 1000px;
   }
 
   .payment-form {
@@ -714,6 +763,8 @@ h3 {
     grid-column: 3;
     grid-row: 2;
   }
+
+  /* checkout success */
 
   .checkout-success {
     min-height: 100%;

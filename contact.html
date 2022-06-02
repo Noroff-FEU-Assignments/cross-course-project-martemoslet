@@ -44,21 +44,57 @@
       <section class="contact">
         <div class="container">
           <div class="contact-text">
-            <h2>Customer service</h2>
+            <h2>Send us a message</h2>
+            <form id="contactForm">
+              <div>
+                  <label>
+                      Name (required)
+                      <input name="firstName" id="firstName" />
+                  </label>
+                  <div class="form-error" id="firstNameError">Name is required</div>
+              </div>
+      
+              <div>
+                  <label>
+                      Subject (minimum 5 characters)
+                      <input name="subject" id="subject" />
+                  </label>
+                  <div class="form-error" id="subjectError">Subject must be at least 5 characters</div>
+              </div>
+      
+              <div>
+                  <label>
+                      Email (required)
+                      <input name="email" id="email" />
+                  </label>
+                  <div class="form-error" id="emailError">Enter a valid email address</div>
+              </div>
+      
+              <div>
+                  <label>
+                      Your message (minimum 20 characters)
+                      <input name="message" id="message" />
+                  </label>
+                  <div class="form-error" id="messageError">Message must be at least 20 characters</div>
+              </div>
+      
+              <button class="cta cta-contact">Send message</button>
+          </form>
+            <h3>Customer service</h3>
             <div class="customer-service">
               <i class="far fa-envelope"></i>
               <p>customerservice@rainydays.com</p>
               <i class="fas fa-phone"></i>
               <p>+47 123 45 678</p>
             </div>
-            <h3>Adress</h3>
+            <h4>Address</h4>
             <p class="adress">Rainydays AS<br>
-            Adress 123<br>
-          456 County</p>
+            Street 123<br>
+          456 Oslo</p>
           <ul class="socials-contact">
-            <li><i class="fab fa-instagram"></i></li>
-            <li> <i class="fab fa-facebook"></i></li>
-            <li><i class="fab fa-youtube"></i></li>
+            <li><a href="https://www.instagram.com/" class="fab fa-instagram"></a></li>
+            <li> <a href="https://www.facebook.com/" class="fab fa-facebook"></a></li>
+            <li><a href="https://www.youtube.com/" class="fab fa-youtube"></a></li>
           </ul>
           </div>
         </div>
@@ -66,14 +102,17 @@
     </main>
     <footer>
       <div class="footer-content">
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
         <ul class="socials">
-          <li><i class="fab fa-instagram"></i></li>
-          <li> <i class="fab fa-facebook"></i></li>
-          <li><i class="fab fa-youtube"></i></li>
+          <li><a href="https://www.instagram.com/" class="fab fa-instagram"></a></li>
+          <li> <a href="https://www.facebook.com/" class="fab fa-facebook"></a></li>
+          <li><a href="https://www.youtube.com/" class="fab fa-youtube"></a></li>
         </ul>
       </div>
     </footer>
+    <script src="js/contact.js"></script>
   </body>
 </html>
