@@ -140,6 +140,12 @@ a {
   cursor: pointer;
 }
 
+.cta:hover,
+.cta-pay:hover,
+.cta-cart:hover {
+  font-weight: bold;
+}
+
 /* Home page */
 .fas {
   color: #072b54;
@@ -646,6 +652,14 @@ h4 {
   margin: 0 auto;
   background: #e6e6e6;
   padding: 50px;
+}
+
+.cart-page h1 {
+  text-align: center;
+}
+
+.cart-page h4 {
+  font-size: 1.2em;
 }
 
 @media (min-width: 600px) {
