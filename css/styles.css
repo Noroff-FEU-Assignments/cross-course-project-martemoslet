@@ -152,6 +152,7 @@ a {
 .fa-search,
 .fa-shopping-cart {
   font-size: 1.8em;
+  align-self: flex-start;
 }
 
 .logo {
