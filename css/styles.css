@@ -352,6 +352,26 @@ p {
   font-weight: lighter;
 }
 
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 40px;
+  padding: 10px;
+  justify-items: center;
+  width: 1200px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.product-image {
+  background-size: cover;
+  min-height: 400px;
+  height: 100%;
+  width: 300px;
+}
+
 /* Specific jacket page */
 
 .jacket-page {
