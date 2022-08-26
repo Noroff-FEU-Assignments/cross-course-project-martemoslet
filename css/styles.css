@@ -352,24 +352,25 @@ p {
   font-weight: lighter;
 }
 
+.container {
+  width: 100%;
+  max-width: 600px;
+}
+
 .products {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 40px;
-  padding: 10px;
-  justify-items: center;
-  width: 1200px;
-  align-items: center;
-  justify-content: center;
+  grid-template-columns: repeat(4, 300px);
   margin: auto;
 }
 
-.product-image {
-  background-size: cover;
-  min-height: 400px;
-  height: 100%;
-  width: 300px;
+.card {
+}
+
+.product-image,
+.details-image {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* Specific jacket page */
@@ -377,6 +378,10 @@ p {
 .jacket-page {
   background: #e6e6e6;
   padding: 20px;
+}
+.jacketsimages {
+  display: flex;
+  width: 300px;
 }
 
 .jackets-images {
@@ -451,6 +456,11 @@ p {
 .radio-size input[type="radio"]:hover + label {
   border: solid 1px #b01d1b;
   cursor: pointer;
+}
+
+.details {
+  margin: auto;
+  justify-content: center;
 }
 
 /* Checkout page */
