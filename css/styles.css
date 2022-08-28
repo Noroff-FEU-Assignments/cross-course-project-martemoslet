@@ -363,9 +363,6 @@ p {
   margin: auto;
 }
 
-.card {
-}
-
 .product-image,
 .details-image {
   height: 300px;
@@ -378,10 +375,6 @@ p {
 .jacket-page {
   background: #e6e6e6;
   padding: 20px;
-}
-.jacketsimages {
-  display: flex;
-  width: 300px;
 }
 
 .jackets-images {
@@ -460,7 +453,12 @@ p {
 
 .details {
   margin: auto;
-  justify-content: center;
+  max-width: 400px;
+}
+
+.details ul {
+  list-style: none;
+  padding: 0;
 }
 
 /* Checkout page */
