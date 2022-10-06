@@ -27,7 +27,7 @@ The products are being fetched from a WordPress REST API using JavaScript.
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone https://github.com/Noroff-FEU-Assignments/cross-course-project-martemoslet.git
 ```
 
 2. Install the dependencies:
