@@ -1,5 +1,7 @@
 # Cross Course Project
 
+<img width="1440" alt="Skjermbilde 2022-10-07 kl  12 17 31" src="https://user-images.githubusercontent.com/95755829/194531447-8ed5a5d8-9978-40d3-9b97-1071b1e7408d.png">
+
 School project to develope an online shop selling rain jackets.
 
 ## Description
